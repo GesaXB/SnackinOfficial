@@ -19,3 +19,11 @@ window.onscroll = () => {
     }
   });
 };
+
+let menuToggle = document.querySelector('.menu-toggle');
+let navItems = document.querySelector('.nav-items');
+
+menuToggle.addEventListener('click', () => {
+  navItems.classList.toggle('active');
+  menuToggle.classList.toggle('active'); // Tambahan untuk animasi
+});

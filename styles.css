@@ -32,6 +32,7 @@ nav {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -116,6 +117,7 @@ header {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -197,6 +199,7 @@ header {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -292,9 +295,11 @@ header {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -328,6 +333,7 @@ header {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -338,9 +344,11 @@ header {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -359,5 +367,53 @@ header {
 
   .hero-image img {
     max-width: 250px;
+  }
+}
+
+/* Style untuk Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  transition: transform 0.3s ease;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+
+  /* Posisi hamburger menu */
+  .menu-toggle {
+    display: block;
+    color: #ca2128;
+  }
+
+  /* Animasi hamburger ketika aktif */
+  .menu-toggle.active i {
+    transform: rotate(90deg);
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-items.active {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    /* sesuaikan dengan tinggi nav */
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 }
