@@ -406,10 +406,12 @@ header {
   .nav-items.active {
     display: block;
     background: #fff;
-    position: absolute;
-    top: 70px;
-    /* sesuaikan dengan tinggi nav */
-    left: 0;
+    position: relative;
+    /* changed from absolute */
+    top: auto;
+    /* remove top positioning */
+    left: auto;
+    /* remove left positioning */
     width: 100%;
     padding: 1rem 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
