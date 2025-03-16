@@ -387,7 +387,6 @@ header {
 
 /* Responsive untuk layar kecil */
 @media (max-width: 768px) {
-
   /* Posisi hamburger menu */
   .menu-toggle {
     display: block;
@@ -471,8 +470,6 @@ header {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
-
 /* Responsive for Testimonials */
 @media (max-width: 768px) {
   .testimonial-cards {
@@ -482,14 +479,15 @@ header {
 
 footer {
   padding: 2rem 10%;
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #ca2128;
   text-align: center;
 }
 
 footer p {
   margin: 0;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 @media (max-width: 768px) {
