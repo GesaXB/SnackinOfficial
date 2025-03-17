@@ -330,6 +330,25 @@ header {
   .tentang-image img {
     max-width: 250px;
   }
+
+  .cta-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cta-buttons a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+
+  
 }
 
 @keyframes fadeInUp {
@@ -364,6 +383,8 @@ header {
     text-align: center;
     padding: 3rem;
   }
+
+
 
   .hero-content {
     max-width: 100%;
@@ -406,15 +427,23 @@ header {
   .nav-items.active {
     display: block;
     background: #fff;
-    position: relative;
-    /* changed from absolute */
-    top: auto;
-    /* remove top positioning */
-    left: auto;
-    /* remove left positioning */
+    position: absolute; 
+    left: 0;
+    top: 10px;
     width: 100%;
     padding: 1rem 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav{
+    display: flex;;
+  }
+  nav .logo i{
+    width: 50%;
+  }
+
+  nav .logo h1{
+     font-size: 20px;
   }
 
   .nav-items ul {
@@ -422,6 +451,19 @@ header {
     gap: 1rem;
     text-align: center;
   }
+  
+
+  .button-beli a {
+    text-decoration: none;
+    color: white;
+    background: #ca2128;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+  
 }
 
 /* Testimonials Section */
