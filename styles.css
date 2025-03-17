@@ -337,7 +337,7 @@ header {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .cta-buttons a {
     text-decoration: none;
     padding: 12px 24px;
@@ -346,9 +346,9 @@ header {
     display: inline-block;
     transition: 0.3s;
   }
-  
 
-  
+
+
 }
 
 @keyframes fadeInUp {
@@ -408,6 +408,7 @@ header {
 
 /* Responsive untuk layar kecil */
 @media (max-width: 768px) {
+
   /* Posisi hamburger menu */
   .menu-toggle {
     display: block;
@@ -426,7 +427,7 @@ header {
   .nav-items.active {
     display: block;
     background: #fff;
-    position: absolute; 
+    position: absolute;
     left: 0;
     top: 10px;
     width: 100%;
@@ -434,15 +435,17 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  nav{
-    display: flex;;
+  nav {
+    display: flex;
+    ;
   }
-  nav .logo i{
+
+  nav .logo i {
     width: 50%;
   }
 
-  nav .logo h1{
-     font-size: 20px;
+  nav .logo h1 {
+    font-size: 20px;
   }
 
   .nav-items ul {
@@ -450,7 +453,7 @@ header {
     gap: 1rem;
     text-align: center;
   }
-  
+
 
   .button-beli a {
     text-decoration: none;
@@ -462,7 +465,7 @@ header {
     transition: 0.3s;
     font-size: 15px;
   }
-  
+
 }
 
 /* Testimonials Section */
@@ -536,4 +539,22 @@ footer p {
   .contact-container form {
     gap: 0.5rem;
   }
+}
+
+/* Social Media Section */
+.social-media {
+  padding: 2rem 10%;
+  background: #ca2128;
+  text-align: center;
+}
+
+.social-media-container a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-media-container a:hover {
+  color: #ff4d4d;
 }
